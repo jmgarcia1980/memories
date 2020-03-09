@@ -1,7 +1,8 @@
 import React from 'react';
+import './styles.css';
 
 const MemTitle = () => (
-    <h2> Titulo del Posteo </h2>
+    <div className ="memTitleCont"> Titulo del Posteo.... </div>
 );
 
 export default MemTitle;

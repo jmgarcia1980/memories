@@ -1,9 +1,10 @@
 import React from 'react';
+import './styles.css';
 
 const MemData = () => (
-    <div>
+    <div className ="memDataCont">
         <p> Datos del posteo... </p>
-        <p> Fecha, comentario...... etc.</p>
+        <p> Fecha, comentario....... etc.</p>
     </div>
 );
 

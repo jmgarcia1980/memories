@@ -1,8 +1,10 @@
 import React from 'react';
 import MemPosting from './MemPosting';
+import './styles.css';
 
 const MemContainer = ()=>(
-    <div>
+    <div className="memContainerCont">
+        <MemPosting />
         <MemPosting />
         <MemPosting />
     </div>

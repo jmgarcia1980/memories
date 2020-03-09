@@ -1,13 +1,23 @@
 import React from 'react';
-import picture from './../../data/image.png'
+import './styles.css';
 
-console.log(picture);
 
 const MemPicture = () => (
     <div>
-        <h3> fotos/imagenes del Posteo</h3>
-        <img src={picture}></img>
+        <ul>
+            <li>
+                Imagen1A
+            </li>
+            <li>
+                Imagen2
+            </li>
+            <li>
+                Imagen3
+            </li>
+        </ul>
+
     </div>
+
 );
 
 export default MemPicture;
