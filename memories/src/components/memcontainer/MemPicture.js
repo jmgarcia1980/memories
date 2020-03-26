@@ -3,24 +3,36 @@ import './styles.css';
 
 
 const MemPicture = () => (
-    <div className="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="ratio: 7:2; min-height: 300; max-height: 350; animation: push">
-        <ul className="uk-slideshow-items">
-            <li>
-                <img ClassName="imgMemPicture" src="static/images/01.jpg" width="300px" height="300px" alt=""/>
-            </li>
-            <li>
-                <img ClassName="imgMemPicture" src="static/images/02.jpg" alt="" width="300px" height="300px"/>
-            </li>
-            <li>
-                <img ClassName="imgMemPicture" src="static/images/03.jpg" alt="" width="300px" height="300px"/>
-            </li>
-            <li>
-                <img ClassName="imgMemPicture" src="static/images/01A.jpg" alt="" uk-cover="true"/>
-            </li>
-
-        </ul>
-        <a className="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous="true" uk-slideshow-item="previous"></a>
-        <a className="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next="true" uk-slideshow-item="next"></a>
+    
+    <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+        </ol>
+        <div className="carousel-inner">
+            <div className="carousel-item active">
+                <img src="static/images/01.jpg" className="d-block w-100" alt="img1"/>
+            </div>
+            <div className="carousel-item">
+                <img src="static/images/02.jpg" className="d-block w-100" alt="img2"/>
+            </div>
+            <div className="carousel-item">
+                <img src="static/images/03.jpg." className="d-block w-100" alt="img3"/>
+            </div>
+            <div className="carousel-item">
+                <img src="static/images/04.jpg." className="d-block w-100" alt="img4"/>
+            </div>
+        </div>
+        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
+        </a>
     </div>
 
 );
